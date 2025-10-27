@@ -1,23 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   body {
-    @apply bg-alice-blue text-dark-slate;
+    @apply bg-gray-900 text-gray-100 font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply bg-accent-orange hover:bg-orange-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg;
+    @apply bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg shadow-sky-500/20;
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold text-dark-slate mb-4 text-center;
+    @apply text-3xl md:text-4xl font-extrabold text-white mb-4 text-center;
   }
   
   .card {
-    @apply bg-white rounded-lg shadow-md p-6 transition-all duration-300 hover:shadow-xl;
+    @apply bg-gray-800/50 rounded-lg shadow-lg p-6 transition-all duration-300 hover:shadow-sky-500/20 hover:-translate-y-2;
+  }
+
+  .advantage-card {
+    @apply bg-gray-800/50 rounded-lg p-8 text-center shadow-lg relative overflow-hidden transition-all duration-300;
+  }
+
+  .advantage-card:before {
+    content: '';
+    @apply absolute -top-1/2 -left-1/2 w-[200%] h-[200%] bg-gradient-to-r from-sky-500 to-fuchsia-500;
+    animation: rotate 6s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .advantage-card:hover:before {
+    opacity: 1;
+  }
+  
+  .advantage-card > * {
+    @apply relative z-10;
+  }
+
+  .advantage-card .advantage-card-icon {
+    @apply bg-gray-900 w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto;
+  }
+
+  .bg-grid-pattern {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 2rem 2rem;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(1turn);
   }
 }

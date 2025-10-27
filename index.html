@@ -26,33 +26,31 @@
   </script>
   <!-- /Yandex.Metrika counter -->
 </head>
-<body>
+<body class="bg-gray-900 text-gray-100 font-sans">
   <noscript><div><img src="https://mc.yandex.ru/watch/XXXXXXXXX" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
   
   <!-- Header -->
-  <header class="bg-white shadow-md sticky top-0 z-50">
+  <header class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
       <div class="flex justify-between items-center">
         <div class="flex items-center space-x-2">
-          <svg class="w-10 h-10 text-sky-blue" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M19.36 2.72l1.42 1.42-5.72 5.71c1.07 1.54 1.22 3.39.32 4.59L9.06 8.12c1.2-.9 3.05-.75 4.59.32l5.71-5.72M5.93 17.57c-2.01-2.01-3.24-4.41-3.58-6.65l4.88-2.09 7.44 7.44-2.09 4.88c-2.24-.34-4.64-1.57-6.65-3.58z"/>
-          </svg>
-          <span class="text-2xl font-bold text-dark-slate">Clean<span class="text-sky-blue">73</span></span>
+          <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+          <span class="text-2xl font-bold text-white">Clean<span class="text-sky-400">73</span></span>
         </div>
         
         <div class="hidden md:flex items-center space-x-6">
-          <a href="#services" class="text-dark-slate hover:text-sky-blue transition">Услуги</a>
-          <a href="#advantages" class="text-dark-slate hover:text-sky-blue transition">Преимущества</a>
-          <a href="#process" class="text-dark-slate hover:text-sky-blue transition">Процесс</a>
-          <a href="#reviews" class="text-dark-slate hover:text-sky-blue transition">Отзывы</a>
-          <a href="tel:+79123456789" class="text-dark-slate hover:text-sky-blue transition">+7 (912) 345-67-89</a>
+          <a href="#services" class="text-gray-300 hover:text-sky-400 transition">Услуги</a>
+          <a href="#advantages" class="text-gray-300 hover:text-sky-400 transition">Преимущества</a>
+          <a href="#process" class="text-gray-300 hover:text-sky-400 transition">Процесс</a>
+          <a href="#reviews" class="text-gray-300 hover:text-sky-400 transition">Отзывы</a>
+          <a href="tel:+79123456789" class="text-gray-300 hover:text-sky-400 transition">+7 (912) 345-67-89</a>
         </div>
         
         <button onclick="trackTelegramClick()" class="btn-primary hidden md:block">
           Заказать в Telegram
         </button>
         
-        <button id="mobile-menu-btn" class="md:hidden text-dark-slate">
+        <button id="mobile-menu-btn" class="md:hidden text-gray-300">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
           </svg>
@@ -61,41 +59,38 @@
       
       <!-- Mobile menu -->
       <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-3">
-        <a href="#services" class="block text-dark-slate hover:text-sky-blue transition">Услуги</a>
-        <a href="#advantages" class="block text-dark-slate hover:text-sky-blue transition">Преимущества</a>
-        <a href="#process" class="block text-dark-slate hover:text-sky-blue transition">Процесс</a>
-        <a href="#reviews" class="block text-dark-slate hover:text-sky-blue transition">Отзывы</a>
-        <a href="tel:+79123456789" class="block text-dark-slate hover:text-sky-blue transition">+7 (912) 345-67-89</a>
+        <a href="#services" class="block text-gray-300 hover:text-sky-400 transition">Услуги</a>
+        <a href="#advantages" class="block text-gray-300 hover:text-sky-400 transition">Преимущества</a>
+        <a href="#process" class="block text-gray-300 hover:text-sky-400 transition">Процесс</a>
+        <a href="#reviews" class="block text-gray-300 hover:text-sky-400 transition">Отзывы</a>
+        <a href="tel:+79123456789" class="block text-gray-300 hover:text-sky-400 transition">+7 (912) 345-67-89</a>
         <button onclick="trackTelegramClick()" class="btn-primary w-full">Заказать в Telegram</button>
       </div>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="py-16 md:py-24 bg-gradient-to-br from-alice-blue to-white">
-    <div class="container mx-auto px-4">
+  <section class="relative py-24 md:py-32 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-gray-900 to-gray-800"></div>
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    
+    <div class="container mx-auto px-4 relative z-10">
       <div class="flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1 text-center md:text-left">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark-slate mb-6 leading-tight">
-            Профессиональная уборка и химчистка <span class="text-sky-blue">в Ульяновске</span>
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight font-display">
+            Профессиональная уборка и химчистка <span class="text-sky-400">в Ульяновске</span>
           </h1>
-          <div class="space-y-3 mb-8 text-lg text-gray-600">
+          <div class="space-y-3 mb-8 text-lg text-gray-400">
             <p class="flex items-center justify-center md:justify-start">
-              <svg class="w-6 h-6 text-accent-orange mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
+              <svg class="w-6 h-6 text-sky-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               Опыт работы более 5 лет
             </p>
             <p class="flex items-center justify-center md:justify-start">
-              <svg class="w-6 h-6 text-accent-orange mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
+              <svg class="w-6 h-6 text-sky-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               Экологически чистые средства
             </p>
             <p class="flex items-center justify-center md:justify-start">
-              <svg class="w-6 h-6 text-accent-orange mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-              </svg>
+              <svg class="w-6 h-6 text-sky-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
               Гарантия качества на все услуги
             </p>
           </div>
@@ -105,9 +100,10 @@
         </div>
         
         <div class="flex-1">
-          <div class="relative">
-            <img src="/images/hero-cleaning.jpg" alt="Профессиональная уборка" class="rounded-2xl shadow-2xl w-full h-auto" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 fill=%22white%22%3EДо/После%3C/text%3E%3C/svg%3E'">
-            <div class="absolute -bottom-6 -right-6 bg-accent-orange text-white p-6 rounded-lg shadow-xl hidden md:block">
+          <div class="relative group">
+            <div class="absolute -inset-1 bg-gradient-to-r from-sky-500 to-fuchsia-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+            <img src="/images/hero-cleaning-2.jpg" alt="Профессиональная уборка" class="relative rounded-2xl shadow-2xl w-full h-auto" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22600%22 height=%22400%22%3E%3Crect width=%22600%22 height=%22400%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2224%22 fill=%22white%22%3EДо/После%3C/text%3E%3C/svg%3E'">
+            <div class="absolute bottom-4 right-4 bg-sky-500/80 backdrop-blur-sm text-white p-4 rounded-lg shadow-xl hidden md:block">
               <p class="text-3xl font-bold">5+</p>
               <p class="text-sm">лет опыта</p>
             </div>
@@ -118,89 +114,76 @@
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="py-16 bg-white">
+  <section id="services" class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
       <h2 class="section-title">Наши услуги</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
         Предоставляем полный спектр услуг по уборке и химчистке для квартир, офисов и автомобилей
       </p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Service 1 -->
         <div class="card">
-          <div class="bg-sky-blue w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
-            </svg>
+          <div class="bg-sky-500/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2 text-center">Химчистка мебели</h3>
-          <p class="text-gray-600 text-center">
+          <h3 class="text-xl font-bold text-white mb-2 text-center">Химчистка мебели</h3>
+          <p class="text-gray-400 text-center">
             Глубокая чистка диванов, кресел, матрасов. Удаление пятен и неприятных запахов
           </p>
         </div>
         
         <!-- Service 2 -->
         <div class="card">
-          <div class="bg-sky-blue w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/>
-              <path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/>
-            </svg>
+          <div class="bg-sky-500/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2 text-center">Химчистка автомобилей</h3>
-          <p class="text-gray-600 text-center">
+          <h3 class="text-xl font-bold text-white mb-2 text-center">Химчистка автомобилей</h3>
+          <p class="text-gray-400 text-center">
             Профессиональная чистка салона, сидений, ковриков. Полировка и защита покрытий
           </p>
         </div>
         
         <!-- Service 3 -->
         <div class="card">
-          <div class="bg-sky-blue w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-            </svg>
+          <div class="bg-sky-500/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2 text-center">Удаление запахов</h3>
-          <p class="text-gray-600 text-center">
+          <h3 class="text-xl font-bold text-white mb-2 text-center">Удаление запахов</h3>
+          <p class="text-gray-400 text-center">
             Озонирование помещений, устранение запахов табака, животных и других источников
           </p>
         </div>
         
         <!-- Service 4 -->
         <div class="card">
-          <div class="bg-sky-blue w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-11a1 1 0 10-2 0v2H7a1 1 0 100 2h2v2a1 1 0 102 0v-2h2a1 1 0 100-2h-2V7z" clip-rule="evenodd"/>
-            </svg>
+          <div class="bg-sky-500/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2 text-center">Локальное пятновыведение</h3>
-          <p class="text-gray-600 text-center">
+          <h3 class="text-xl font-bold text-white mb-2 text-center">Локальное пятновыведение</h3>
+          <p class="text-gray-400 text-center">
             Точечное удаление сложных пятен с любых поверхностей без повреждения материала
           </p>
         </div>
         
         <!-- Service 5 -->
         <div class="card">
-          <div class="bg-sky-blue w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/>
-            </svg>
+          <div class="bg-sky-500/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2 text-center">Уборка квартир</h3>
-          <p class="text-gray-600 text-center">
+          <h3 class="text-xl font-bold text-white mb-2 text-center">Уборка квартир</h3>
+          <p class="text-gray-400 text-center">
             Генеральная и поддерживающая уборка квартир. Мытье окон, полов, кухни и санузлов
           </p>
         </div>
         
         <!-- Service 6 -->
         <div class="card">
-          <div class="bg-sky-blue w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clip-rule="evenodd"/>
-            </svg>
+          <div class="bg-sky-500/10 w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2 text-center">Уборка офисов</h3>
-          <p class="text-gray-600 text-center">
+          <h3 class="text-xl font-bold text-white mb-2 text-center">Уборка офисов</h3>
+          <p class="text-gray-400 text-center">
             Профессиональная уборка офисных помещений. Поддержание чистоты на регулярной основе
           </p>
         </div>
@@ -209,89 +192,76 @@
   </section>
 
   <!-- Advantages Section -->
-  <section id="advantages" class="py-16 bg-light-gray">
+  <section id="advantages" class="py-16 bg-gray-800/50">
     <div class="container mx-auto px-4">
       <h2 class="section-title">Почему выбирают нас</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
         Мы заботимся о качестве наших услуг и репутации компании
       </p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Advantage 1 -->
-        <div class="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition">
-          <div class="bg-accent-orange w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
-            </svg>
+        <div class="advantage-card">
+          <div class="advantage-card-icon">
+            <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Опыт работы 5+ лет</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Опыт работы 5+ лет</h3>
+          <p class="text-gray-400">
             Сотни довольных клиентов и успешно выполненных заказов
           </p>
         </div>
         
         <!-- Advantage 2 -->
-        <div class="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition">
-          <div class="bg-accent-orange w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
-              <path fill-rule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm9.707 5.707a1 1 0 00-1.414-1.414L9 12.586l-1.293-1.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
+        <div class="advantage-card">
+          <div class="advantage-card-icon">
+            <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h6m-6 4h6m-6 4h6"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Профессиональное оборудование</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Профессиональное оборудование</h3>
+          <p class="text-gray-400">
             Используем современную технику и инструменты ведущих производителей
           </p>
         </div>
         
         <!-- Advantage 3 -->
-        <div class="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition">
-          <div class="bg-accent-orange w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
-            </svg>
+        <div class="advantage-card">
+          <div class="advantage-card-icon">
+            <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547a2 2 0 01-2.288 0l-.434-.434a2 2 0 010-2.828l3.182-3.182a2 2 0 00.547-1.022l.477-2.387a6 6 0 00-.517-3.86l-.158-.318a6 6 0 01-.517-3.86L2.79 3.58a2 2 0 00-.547-1.806a2 2 0 010-2.288l.434-.434a2 2 0 012.828 0l3.182 3.182c.341.341.442.82.315 1.258l-1.09 3.823a2.003 2.003 0 001.31 2.508l.412.137a2.003 2.003 0 002.508-1.31l3.823-1.09c.438-.127.917-.026 1.258.315l3.182 3.182a2 2 0 010 2.828l-.434.434a2 2 0 01-2.288 0z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Экологичные средства</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Экологичные средства</h3>
+          <p class="text-gray-400">
             Безопасные гипоаллергенные средства, подходящие для домов с детьми и животными
           </p>
         </div>
         
         <!-- Advantage 4 -->
-        <div class="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition">
-          <div class="bg-accent-orange w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
-            </svg>
+        <div class="advantage-card">
+          <div class="advantage-card-icon">
+            <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Гарантия качества</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Гарантия качества</h3>
+          <p class="text-gray-400">
             Если результат вас не устроит - переделаем бесплатно
           </p>
         </div>
         
         <!-- Advantage 5 -->
-        <div class="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition">
-          <div class="bg-accent-orange w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
-            </svg>
+        <div class="advantage-card">
+          <div class="advantage-card-icon">
+            <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Страхование</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Страхование</h3>
+          <p class="text-gray-400">
             Все наши специалисты застрахованы, ваше имущество в безопасности
           </p>
         </div>
         
         <!-- Advantage 6 -->
-        <div class="bg-white rounded-lg p-8 text-center shadow-md hover:shadow-xl transition">
-          <div class="bg-accent-orange w-20 h-20 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-            </svg>
+        <div class="advantage-card">
+          <div class="advantage-card-icon">
+            <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V7a2 2 0 012-2h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 01.293.707V8z"></path></svg>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Быстрый отклик</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Быстрый отклик</h3>
+          <p class="text-gray-400">
             Ответим в Telegram в течение 5 минут и подберем удобное время
           </p>
         </div>
@@ -300,10 +270,10 @@
   </section>
 
   <!-- Process Section -->
-  <section id="process" class="py-16 bg-white">
+  <section id="process" class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
       <h2 class="section-title">Как мы работаем</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
         Простой и понятный процесс от заявки до результата
       </p>
       
@@ -311,13 +281,13 @@
         <!-- Step 1 -->
         <div class="text-center">
           <div class="relative">
-            <div class="bg-sky-blue w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
-              <span class="text-4xl font-bold text-white">1</span>
+            <div class="bg-gray-800 border-2 border-sky-500/30 w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <span class="text-4xl font-bold text-sky-400">1</span>
             </div>
-            <div class="hidden lg:block absolute top-12 left-3/4 w-full h-1 bg-sky-blue opacity-30"></div>
+            <div class="hidden lg:block absolute top-12 left-3/4 w-full h-1 bg-sky-500/30"></div>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Оставляете заявку</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Оставляете заявку</h3>
+          <p class="text-gray-400">
             Напишите нам в Telegram или позвоните по телефону
           </p>
         </div>
@@ -325,13 +295,13 @@
         <!-- Step 2 -->
         <div class="text-center">
           <div class="relative">
-            <div class="bg-sky-blue w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
-              <span class="text-4xl font-bold text-white">2</span>
+            <div class="bg-gray-800 border-2 border-sky-500/30 w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <span class="text-4xl font-bold text-sky-400">2</span>
             </div>
-            <div class="hidden lg:block absolute top-12 left-3/4 w-full h-1 bg-sky-blue opacity-30"></div>
+            <div class="hidden lg:block absolute top-12 left-3/4 w-full h-1 bg-sky-500/30"></div>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Согласуем детали</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Согласуем детали</h3>
+          <p class="text-gray-400">
             Обсуждаем объем работ, озвучиваем стоимость и сроки
           </p>
         </div>
@@ -339,24 +309,24 @@
         <!-- Step 3 -->
         <div class="text-center">
           <div class="relative">
-            <div class="bg-sky-blue w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
-              <span class="text-4xl font-bold text-white">3</span>
+            <div class="bg-gray-800 border-2 border-sky-500/30 w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <span class="text-4xl font-bold text-sky-400">3</span>
             </div>
-            <div class="hidden lg:block absolute top-12 left-3/4 w-full h-1 bg-sky-blue opacity-30"></div>
+            <div class="hidden lg:block absolute top-12 left-3/4 w-full h-1 bg-sky-500/30"></div>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Выполняем работу</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Выполняем работу</h3>
+          <p class="text-gray-400">
             Приезжаем в удобное для вас время и качественно выполняем уборку
           </p>
         </div>
         
         <!-- Step 4 -->
         <div class="text-center">
-          <div class="bg-sky-blue w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
-            <span class="text-4xl font-bold text-white">4</span>
+          <div class="bg-gray-800 border-2 border-sky-500/30 w-24 h-24 rounded-full flex items-center justify-center mb-4 mx-auto">
+            <span class="text-4xl font-bold text-sky-400">4</span>
           </div>
-          <h3 class="text-xl font-bold text-dark-slate mb-2">Принимаете работу</h3>
-          <p class="text-gray-600">
+          <h3 class="text-xl font-bold text-white mb-2">Принимаете работу</h3>
+          <p class="text-gray-400">
             Проверяете результат и остаетесь довольны чистотой
           </p>
         </div>
@@ -365,52 +335,52 @@
   </section>
 
   <!-- Gallery Section -->
-  <section id="gallery" class="py-16 bg-light-gray">
+  <section id="gallery" class="py-16 bg-gray-800/50">
     <div class="container mx-auto px-4">
       <h2 class="section-title">Примеры наших работ</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
         Фотографии до и после наших услуг
       </p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div class="relative group overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/work-1.jpg" alt="Работа 1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 1%3C/text%3E%3C/svg%3E'">
-          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+          <img src="/images/work-1.jpg" alt="Работа 1" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 1%3C/text%3E%3C/svg%3E'">
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Химчистка дивана</span>
           </div>
         </div>
         
         <div class="relative group overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/work-2.jpg" alt="Работа 2" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 2%3C/text%3E%3C/svg%3E'">
-          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+          <img src="/images/work-2.jpg" alt="Работа 2" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 2%3C/text%3E%3C/svg%3E'">
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Чистка салона авто</span>
           </div>
         </div>
         
         <div class="relative group overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/work-3.jpg" alt="Работа 3" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 3%3C/text%3E%3C/svg%3E'">
-          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+          <img src="/images/work-3.jpg" alt="Работа 3" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 3%3C/text%3E%3C/svg%3E'">
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Генеральная уборка</span>
           </div>
         </div>
         
         <div class="relative group overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/work-4.jpg" alt="Работа 4" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 4%3C/text%3E%3C/svg%3E'">
-          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+          <img src="/images/work-4.jpg" alt="Работа 4" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 4%3C/text%3E%3C/svg%3E'">
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Чистка ковра</span>
           </div>
         </div>
         
         <div class="relative group overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/work-5.jpg" alt="Работа 5" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 5%3C/text%3E%3C/svg%3E'">
-          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+          <img src="/images/work-5.jpg" alt="Работа 5" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 5%3C/text%3E%3C/svg%3E'">
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Чистка матраса</span>
           </div>
         </div>
         
         <div class="relative group overflow-hidden rounded-lg shadow-lg">
-          <img src="/images/work-6.jpg" alt="Работа 6" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%2387CEFA%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 6%3C/text%3E%3C/svg%3E'">
-          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-opacity duration-300 flex items-center justify-center">
+          <img src="/images/work-6.jpg" alt="Работа 6" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect width=%22400%22 height=%22300%22 fill=%22%231F2937%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-size=%2220%22 fill=%22white%22%3EДо/После 6%3C/text%3E%3C/svg%3E'">
+          <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-60 transition-opacity duration-300 flex items-center justify-center">
             <span class="text-white text-lg font-bold opacity-0 group-hover:opacity-100 transition-opacity duration-300">Уборка офиса</span>
           </div>
         </div>
@@ -419,82 +389,82 @@
   </section>
 
   <!-- Reviews Section -->
-  <section id="reviews" class="py-16 bg-white">
+  <section id="reviews" class="py-16 bg-gray-900">
     <div class="container mx-auto px-4">
       <h2 class="section-title">Отзывы наших клиентов</h2>
-      <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p class="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
         Узнайте, что говорят о нас люди, воспользовавшиеся нашими услугами
       </p>
       
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <!-- Review 1 -->
-        <div class="bg-light-gray rounded-lg p-6 shadow-md">
+        <div class="bg-gray-800/50 rounded-lg p-6 shadow-lg">
           <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-sky-blue flex items-center justify-center text-white text-2xl font-bold mr-4">
+            <div class="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 text-2xl font-bold mr-4">
               А
             </div>
             <div>
-              <h4 class="font-bold text-dark-slate">Анна Петрова</h4>
-              <div class="flex text-accent-orange">
+              <h4 class="font-bold text-white">Анна Петрова</h4>
+              <div class="flex text-sky-400">
                 ★★★★★
               </div>
             </div>
           </div>
-          <p class="text-gray-600 italic">
+          <p class="text-gray-400 italic">
             "Отличная работа! Диван выглядит как новый. Ребята приехали вовремя, все сделали быстро и качественно. Обязательно обращусь еще!"
           </p>
         </div>
         
         <!-- Review 2 -->
-        <div class="bg-light-gray rounded-lg p-6 shadow-md">
+        <div class="bg-gray-800/50 rounded-lg p-6 shadow-lg">
           <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-sky-blue flex items-center justify-center text-white text-2xl font-bold mr-4">
+            <div class="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 text-2xl font-bold mr-4">
               Д
             </div>
             <div>
-              <h4 class="font-bold text-dark-slate">Дмитрий Соколов</h4>
-              <div class="flex text-accent-orange">
+              <h4 class="font-bold text-white">Дмитрий Соколов</h4>
+              <div class="flex text-sky-400">
                 ★★★★★
               </div>
             </div>
           </div>
-          <p class="text-gray-600 italic">
+          <p class="text-gray-400 italic">
             "Заказывал химчистку салона автомобиля. Результат превзошел ожидания! Салон как будто только из автосалона. Рекомендую!"
           </p>
         </div>
         
         <!-- Review 3 -->
-        <div class="bg-light-gray rounded-lg p-6 shadow-md">
+        <div class="bg-gray-800/50 rounded-lg p-6 shadow-lg">
           <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-sky-blue flex items-center justify-center text-white text-2xl font-bold mr-4">
+            <div class="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 text-2xl font-bold mr-4">
               Е
             </div>
             <div>
-              <h4 class="font-bold text-dark-slate">Елена Иванова</h4>
-              <div class="flex text-accent-orange">
+              <h4 class="font-bold text-white">Елена Иванова</h4>
+              <div class="flex text-sky-400">
                 ★★★★★
               </div>
             </div>
           </div>
-          <p class="text-gray-600 italic">
+          <p class="text-gray-400 italic">
             "Делали генеральную уборку квартиры после ремонта. Профессионалы своего дела! Все блестит, ни одной пылинки. Спасибо!"
           </p>
         </div>
         
         <!-- Review 4 -->
-        <div class="bg-light-gray rounded-lg p-6 shadow-md">
+        <div class="bg-gray-800/50 rounded-lg p-6 shadow-lg">
           <div class="flex items-center mb-4">
-            <div class="w-16 h-16 rounded-full bg-sky-blue flex items-center justify-center text-white text-2xl font-bold mr-4">
+            <div class="w-16 h-16 rounded-full bg-sky-500/10 flex items-center justify-center text-sky-400 text-2xl font-bold mr-4">
               М
             </div>
             <div>
-              <h4 class="font-bold text-dark-slate">Михаил Волков</h4>
-              <div class="flex text-accent-orange">
+              <h4 class="font-bold text-white">Михаил Волков</h4>
+              <div class="flex text-sky-400">
                 ★★★★★
               </div>
             </div>
           </div>
-          <p class="text-gray-600 italic">
+          <p class="text-gray-400 italic">
             "Убирали запах после пожара в квартире. Сделали озонирование - запаха как не бывало! Большое спасибо за качественную работу!"
           </p>
         </div>
@@ -503,15 +473,15 @@
   </section>
 
   <!-- CTA Section -->
-  <section class="py-16 bg-gradient-to-r from-sky-blue to-accent-orange">
+  <section class="py-16 bg-gradient-to-r from-sky-500 to-fuchsia-500">
     <div class="container mx-auto px-4 text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
         Готовы заказать уборку?
       </h2>
-      <p class="text-xl text-white mb-8 max-w-2xl mx-auto">
+      <p class="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
         Напишите нам в Telegram, и мы ответим в течение 5 минут!
       </p>
-      <button onclick="trackTelegramClick()" class="bg-white text-sky-blue hover:bg-gray-100 font-bold py-4 px-10 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
+      <button onclick="trackTelegramClick()" class="bg-white text-sky-600 hover:bg-gray-100 font-bold py-4 px-10 rounded-lg text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl">
         Написать в Telegram
       </button>
       <p class="text-white mt-4">
@@ -521,58 +491,57 @@
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark-slate text-white py-12">
+  <footer class="bg-gray-900 border-t border-sky-500/10 text-gray-400 py-12">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Company Info -->
         <div>
           <div class="flex items-center space-x-2 mb-4">
-            <svg class="w-8 h-8 text-sky-blue" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.36 2.72l1.42 1.42-5.72 5.71c1.07 1.54 1.22 3.39.32 4.59L9.06 8.12c1.2-.9 3.05-.75 4.59.32l5.71-5.72M5.93 17.57c-2.01-2.01-3.24-4.41-3.58-6.65l4.88-2.09 7.44 7.44-2.09 4.88c-2.24-.34-4.64-1.57-6.65-3.58z"/>
-            </svg>
-            <span class="text-xl font-bold">Clean<span class="text-sky-blue">73</span></span>
+            <svg class="w-8 h-8 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+            <span class="text-xl font-bold text-white">Clean<span class="text-sky-400">73</span></span>
           </div>
-          <p class="text-gray-300">
-            Профессиональная уборка и химчистка в Ульяновске
+          <p class="mb-4">
+            Профессиональная уборка и химчистка в Ульяновске.
           </p>
+          <p class="text-sm">© 2024 Clean73. Все права защищены.</p>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-bold text-white mb-4">Быстрые ссылки</h4>
+          <ul class="space-y-2">
+            <li><a href="#services" class="hover:text-sky-400 transition">Услуги</a></li>
+            <li><a href="#advantages" class="hover:text-sky-400 transition">Преимущества</a></li>
+            <li><a href="#reviews" class="hover:text-sky-400 transition">Отзывы</a></li>
+            <li><a href="privacy.html" class="hover:text-sky-400 transition">Политика конфиденциальности</a></li>
+          </ul>
         </div>
         
         <!-- Contacts -->
         <div>
-          <h3 class="text-xl font-bold mb-4">Контакты</h3>
-          <div class="space-y-2 text-gray-300">
-            <p>
-              <a href="tel:+79123456789" class="hover:text-sky-blue transition">+7 (912) 345-67-89</a>
-            </p>
-            <p>
-              <a href="https://t.me/clean73ru" target="_blank" class="hover:text-sky-blue transition flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"/>
-                </svg>
-                @clean73ru
-              </a>
-            </p>
-            <p>г. Ульяновск</p>
-          </div>
+          <h4 class="text-lg font-bold text-white mb-4">Контакты</h4>
+          <ul class="space-y-2">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+              <a href="mailto:info@clean73.ru" class="hover:text-sky-400 transition">info@clean73.ru</a>
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+              <a href="tel:+79123456789" class="hover:text-sky-400 transition">+7 (912) 345-67-89</a>
+            </li>
+          </ul>
         </div>
-        
-        <!-- Legal -->
-        <div>
-          <h3 class="text-xl font-bold mb-4">Информация</h3>
-          <div class="space-y-2 text-gray-300">
-            <p>ИП Иванов И.И.</p>
-            <p>ИНН: 1234567890</p>
-            <p>
-              <a href="/privacy.html" class="hover:text-sky-blue transition">Политика конфиденциальности</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-        <p>&copy; 2025 Clean73. Все права защищены.</p>
       </div>
     </div>
   </footer>
+
+  <script type="text/javascript">
+    function trackTelegramClick() {
+      // Replace XXXXXXXXX with your actual counter ID and 'telegram_click' with your goal ID
+      ym(XXXXXXXXX, 'reachGoal', 'telegram_click');
+      window.open('https://t.me/your_telegram_username', '_blank');
+    }
+  </script>
+
 </body>
 </html>
