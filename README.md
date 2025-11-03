@@ -93,12 +93,12 @@ ym(XXXXXXXXX, "init", {
 Обновите следующую информацию в файлах:
 
 ### Telegram
-Замените `clean73ru` на ваш актуальный username в Telegram:
-- В `src/main.js`: строка `const telegramUsername = 'clean73ru';`
+Замените `himclean_pro` на ваш актуальный username в Telegram:
+- В `src/main.js`: строка `const telegramUsername = 'himclean_pro';`
 - В `index.html` и `privacy.html`: ссылки на Telegram
 
 ### Телефон
-Замените `+79123456789` на ваш актуальный номер телефона
+Замените `+79962197721` на ваш актуальный номер телефона
 
 ### Юридическая информация
 В футере (`index.html` и `privacy.html`) обновите:
@@ -121,6 +121,6 @@ ISC
 
 ## 🤝 Контакты
 
-- Telegram: [@clean73ru](https://t.me/clean73ru)
-- Телефон: +7 (912) 345-67-89
-- Домен: cleaning-73.ru
+- Telegram: [@himclean_pro](https://t.me/himclean_pro)
+- Телефон: +7 996 219 7721
+- Домен: himclean.pro

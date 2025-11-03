@@ -26,7 +26,7 @@ if (mobileMenuBtn && mobileMenu) {
 
 // Telegram link helper
 function openTelegram() {
-  const telegramUsername = 'clean73ru';
+  const telegramUsername = 'himclean_pro';
   window.open(`https://t.me/${telegramUsername}`, '_blank');
 }
 
@@ -35,9 +35,17 @@ window.openTelegram = openTelegram;
 
 // Yandex Metrika goal tracking
 function trackTelegramClick() {
-  if (typeof ym !== 'undefined') {
-    ym(YANDEX_COUNTER_ID, 'reachGoal', 'telegram_click');
+  const hasGlobalCounter = typeof YANDEX_COUNTER_ID !== 'undefined';
+  const counterId = hasGlobalCounter
+    ? YANDEX_COUNTER_ID
+    : (typeof window !== 'undefined' && typeof window.YANDEX_COUNTER_ID !== 'undefined'
+        ? window.YANDEX_COUNTER_ID
+        : null);
+
+  if (typeof ym === 'function' && counterId) {
+    ym(counterId, 'reachGoal', 'telegram_click');
   }
+
   openTelegram();
 }
 
