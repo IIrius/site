@@ -55,6 +55,73 @@
     background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
     background-size: 2rem 2rem;
   }
+
+  .hero-heading {
+    text-shadow:
+      0 0 12px rgba(125, 211, 252, 0.28),
+      0 0 24px rgba(56, 189, 248, 0.18);
+    transition: text-shadow 0.3s ease;
+  }
+
+  .hero-image-wrapper {
+    @apply relative rounded-2xl;
+    z-index: 0;
+  }
+
+  .hero-image-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: -0.35rem;
+    border-radius: inherit;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.55) 0%, rgba(191, 219, 254, 0.45) 40%, rgba(56, 189, 248, 0.2) 70%, transparent 90%);
+    filter: blur(10px);
+    opacity: 0.75;
+    pointer-events: none;
+    z-index: -1;
+    transition: opacity 0.3s ease, filter 0.3s ease, inset 0.3s ease;
+  }
+
+  .hero-image-wrapper:hover::before {
+    opacity: 0.88;
+    filter: blur(14px);
+    inset: -0.45rem;
+  }
+
+  @media (min-width: 768px) {
+    .hero-heading {
+      text-shadow:
+        0 0 18px rgba(125, 211, 252, 0.3),
+        0 0 32px rgba(56, 189, 248, 0.2),
+        0 0 48px rgba(56, 189, 248, 0.12);
+    }
+
+    .hero-image-wrapper::before {
+      inset: -0.4rem;
+      filter: blur(12px);
+    }
+
+    .hero-image-wrapper:hover::before {
+      inset: -0.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .hero-heading {
+      text-shadow:
+        0 0 20px rgba(125, 211, 252, 0.32),
+        0 0 40px rgba(56, 189, 248, 0.22),
+        0 0 60px rgba(14, 165, 233, 0.18);
+    }
+
+    .hero-image-wrapper::before {
+      inset: -0.45rem;
+      filter: blur(14px);
+    }
+
+    .hero-image-wrapper:hover::before {
+      inset: -0.55rem;
+    }
+  }
 }
 
 @keyframes rotate {
