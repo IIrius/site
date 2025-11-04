@@ -14,13 +14,49 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Mobile menu toggle
+// Mobile menu toggle with smooth animation
 const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenu = document.getElementById('mobile-menu');
 
 if (mobileMenuBtn && mobileMenu) {
+  const toggleMobileMenu = (forceOpen) => {
+    const isOpen = mobileMenu.classList.contains('is-open');
+    const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : !isOpen;
+
+    mobileMenu.classList.toggle('is-open', shouldOpen);
+    mobileMenuBtn.setAttribute('aria-expanded', shouldOpen.toString());
+    mobileMenuBtn.setAttribute('aria-label', shouldOpen ? 'Закрыть меню' : 'Открыть меню');
+    mobileMenu.setAttribute('aria-hidden', (!shouldOpen).toString());
+  };
+
+  const closeMenu = () => {
+    if (mobileMenu.classList.contains('is-open')) {
+      toggleMobileMenu(false);
+    }
+  };
+
   mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('hidden');
+    toggleMobileMenu();
+  });
+
+  mobileMenu.querySelectorAll('a, button').forEach((element) => {
+    element.addEventListener('click', () => {
+      if (element !== mobileMenuBtn) {
+        closeMenu();
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMenu();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth >= 768) {
+      closeMenu();
+    }
   });
 }
 
